@@ -1,0 +1,29 @@
+:root {
+    --purple-700: #2F036E;
+    --white: #FFF;
+    --padding: 1em;
+}
+
+body {
+    background-color: var(--purple-700);
+}
+
+#header {
+    padding: var(--padding);
+    text-align: center;
+}
+
+.pac-logo {
+    width: 500px;
+    height: auto;
+}
+
+footer {
+    text-align: right;
+    padding: var(--padding);
+}
+
+.trybe-logo {
+    width: 30px;
+    height: auto;
+}
