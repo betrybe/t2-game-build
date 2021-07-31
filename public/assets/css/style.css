@@ -1,45 +1,77 @@
 :root {
-    --purple-700: #271444;
-    --white: #FFF;
+  --purple-700: #271444;
+  --white: #fff;
 }
 
 body {
-    background-color: var(--purple-700);
-    background-image: url('../images/trybe-background.png');
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: top -95px right -50px;
-    font-family: 'Roboto Mono', monospace;
-    color: var(--white);
+  background-color: var(--purple-700);
+  /* background-image: url("../images/trybe-background.png");
+  background-size: 300px;
+  background-repeat: no-repeat; */
+  /* background-position: top -95px right -50px; */
+  font-family: "Roboto Mono", monospace;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
 }
 
 #header {
-    padding: 30px;
-    text-align: center;
+  padding: 30px;
+  text-align: center;
 }
 
 .pac-logo {
-    width: 500px;
-    height: auto;
+  width: 500px;
+  height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 #mobile-warning {
-    text-align: left;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .rocket {
-    text-align: center;
+  text-align: center;
+  margin-top: 50px;
 }
 
 footer {
-    text-align: right;
-    padding: 15px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  text-align: right;
+  padding: 15px;
 }
 
 .trybe-logo {
-    width: 30px;
+  width: 30px;
+  height: auto;
+}
+
+.trybe-logo-pixelated {
+  position: fixed;
+  top: -95px;
+  right: -50px;
+  width: 250px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .pac-logo {
+    width: 400px;
     height: auto;
+  }
+
+  .trybe-logo-pixelated {
+    top: -25px;
+    right: -15px;
+    width: 100px;
+    height: auto;
+  }
 }

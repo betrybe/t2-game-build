@@ -1,35 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="/public/assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/public/assets/css/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Pac-Trybe</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/GAME.json");
-    </script>
+    <script src="/public/Build/UnityLoader.js"></script>
+    <script src="/public/assets/js/index.js"></script>
   </head>
   <body>
     <div id="header">
-        <img class="pac-logo" src="/public/assets/images/pac-trybe-logo.png" alt="Pac-Trybe logo">
+      <img
+        class="pac-logo"
+        src="/public/assets/images/pac-trybe-logo.png"
+        alt="Pac-Trybe logo"
+      />
     </div>
-    <div id="mobile-warning">
-        <p>Para dar o último passo e resolver esse mistério, você deve abrir esta página em um computador.</p>
-        <p>No PC, esta página vai te levar direto para o Pac-Trybe, a corrida contra os bugs.</p>
-        <p>Você deve completar o jogo para receber a mensagem especial de Trybe 2 anos!</p>
-        <p>#vqv #goTrybe #Trybe2anos :)</p>
-        <p class="rocket"><img src="/public/assets/images/foguete.png" alt="Foguete coletando pontos" width="200px"></p>
-    </div>
-    <div id="gameContainer" style="width: 1024px; height: 768px; margin: auto"></div>
+    <section id="mobile-warning" style="display: none">
+      <p>
+        Para dar o último passo e resolver esse mistério, você deve abrir esta
+        página em um computador.
+      </p>
+      <p>
+        No PC, esta página vai te levar direto para o Pac-Trybe, a corrida
+        contra os bugs.
+      </p>
+      <p>
+        Você deve completar o jogo para receber a mensagem especial de Trybe 2
+        anos!
+      </p>
+      <p>#vqv #goTrybe #Trybe2anos :)</p>
+      <p class="rocket">
+        <img
+          src="/public/assets/images/foguete.png"
+          alt="Foguete coletando pontos"
+          width="200px"
+        />
+      </p>
+    </section>
+    <main
+      id="game-container"
+      style="width: 1024px; height: 768px; margin: auto; display: none"
+    ></main>
     <footer>
-        <a href="https://www.betrybe.com/" title="Trybe" target="_blank">
-            <img class="trybe-logo" src="/public/assets/images/trybe-pixel-logo.png" alt="Trybe logo">
-        </a>
+      <a href="https://www.betrybe.com/" title="Trybe" target="_blank">
+        <img
+          class="trybe-logo"
+          src="/public/assets/images/trybe-pixel-logo.png"
+          alt="Trybe logo"
+        />
+      </a>
     </footer>
+    <img
+      class="trybe-logo-pixelated"
+      src="/public/assets/images/trybe-background.png"
+      alt="Trybe logo pixelated"
+    />
   </body>
 </html>
