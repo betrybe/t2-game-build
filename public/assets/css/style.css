@@ -1,15 +1,19 @@
 :root {
-    --purple-700: #2F036E;
+    --purple-700: #271444;
     --white: #FFF;
-    --padding: 1em;
 }
 
 body {
     background-color: var(--purple-700);
+    background-image: url('../images/trybe-background.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: top -95px right -50px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #header {
-    padding: var(--padding);
+    padding: 30px;
     text-align: center;
 }
 
@@ -20,7 +24,7 @@ body {
 
 footer {
     text-align: right;
-    padding: var(--padding);
+    padding: 15px;
 }
 
 .trybe-logo {
