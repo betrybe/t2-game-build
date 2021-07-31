@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     background-position: top -95px right -50px;
     font-family: 'Roboto Mono', monospace;
+    color: var(--white);
 }
 
 #header {
@@ -20,6 +21,17 @@ body {
 .pac-logo {
     width: 500px;
     height: auto;
+}
+
+#mobile-warning {
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.rocket {
+    text-align: center;
 }
 
 footer {
