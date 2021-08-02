@@ -5,10 +5,8 @@
 
 body {
   background-color: var(--purple-700);
-  /* background-image: url("../images/trybe-background.png");
-  background-size: 300px;
-  background-repeat: no-repeat; */
-  /* background-position: top -95px right -50px; */
+  padding: 0;
+  margin: 0;
   font-family: "Roboto Mono", monospace;
   color: var(--white);
   display: flex;
@@ -61,7 +59,11 @@ footer {
   height: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
+  #header {
+    top: 100px;
+  }
+
   .pac-logo {
     width: 400px;
     height: auto;
@@ -72,5 +74,28 @@ footer {
     right: -15px;
     width: 100px;
     height: auto;
+  }
+}
+
+@media only screen and (max-height: 768px) {
+  #header {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .pac-logo {
+    width: 200px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  #mobile-warning {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-height: 760px) {
+  body {
+    overflow-y: hidden;
   }
 }
