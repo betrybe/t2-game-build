@@ -95,7 +95,4 @@ footer {
 }
 
 @media screen and (min-height: 760px) {
-  body {
-    overflow-y: hidden;
-  }
 }
