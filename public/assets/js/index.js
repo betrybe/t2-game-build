@@ -24,6 +24,15 @@ function showMobileWarning() {
   document.querySelector("#mobile-warning").style.display = "block";
 }
 
+function showVimeoVideo() {
+  document.querySelector("#game-container").style.display = "none";
+  document.querySelector("#vimeo-video").style.display = "block";
+}
+
 window.onload = function () {
   isMobile() ? showMobileWarning() : initGame();
+
+  window.document.addEventListener("game-finished", () => {
+    showVimeoVideo();
+  });
 };
