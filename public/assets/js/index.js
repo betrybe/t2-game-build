@@ -25,8 +25,10 @@ function showMobileWarning() {
 }
 
 function showVimeoVideo() {
-  document.querySelector("#game-container").style.display = "none";
-  document.querySelector("#vimeo-video").style.display = "block";
+  setTimeout(() => {
+    document.querySelector("#game-container").style.display = "none";
+    document.querySelector("#vimeo-video").style.display = "block";
+  }, 8000);
 }
 
 window.onload = function () {
